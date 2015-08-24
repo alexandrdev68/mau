@@ -1,1 +1,16 @@
 @CHARSET "UTF-8";
+.mBack{
+	background:url(../img/back.jpg) fixed transparent center;
+	height:790px;
+}
+.mTopPnl{
+	margin-bottom:0;
+}
+
+.mBckWhite{
+	background-color:#fff;
+}
+
+.mLogoCorrection{
+	padding:3px;
+}
