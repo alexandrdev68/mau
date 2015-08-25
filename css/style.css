@@ -21,6 +21,10 @@
 	margin-top:5px;
 }
 
+.mHide{
+	display:none;
+}
+
 .mRepTypeFix{
 	position: absolute;
 	right: 10px;
