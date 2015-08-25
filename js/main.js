@@ -12,7 +12,8 @@ var UIA = {
 			$('._repMenu a').click(function (e) {
 				  e.preventDefault();
 				  $('._repRightTopHelp').text($(this).text());
-				  $(this).tab('show')
+				  $(this).tab('show');
+				  $('._repMenu').hide();
 			})
 		}
 }
