@@ -1,14 +1,40 @@
 @CHARSET "UTF-8";
 .mBack{
-	background:url(../img/back.jpg) fixed transparent center;
+	background:url(../img/back.jpg) fixed transparent no-repeat center;
 	height:790px;
+	background-size:cover;
 }
 .mTopPnl{
 	margin-bottom:0;
+	border-width: 0;
 }
 
 .mBckWhite{
 	background-color:#fff;
+}
+
+.mBackgroundOff{
+	background:none;
+}
+
+.mTopMargin5{
+	margin-top:5px;
+}
+
+.mRepTypeFix{
+	position: absolute;
+	right: 10px;
+	top:10px;
+	z-index:12000
+	
+}
+
+.mCursor:hover{
+	cursor:pointer;
+}
+
+.mBackOpacity{
+	background-color:rgba(255, 255, 255, 0.3);
 }
 
 .mLogoCorrection{

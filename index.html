@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
+<meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="libs/jquery-1.11.3.min.js"></script>
@@ -11,8 +12,8 @@
 </head>
 <body>
 <div class="container-fluid">
-	<div class="row">
-		<nav class="navbar navbar-default navbar-fixed-top mTopPnl mBckWhite">
+	<div class="row mBack">
+		<nav class="navbar navbar-default navbar-static-top mTopPnl mBckWhite">
 		  <div class="container-fluid col-sm-10 col-sm-offset-1">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    <div class="navbar-header">
@@ -30,45 +31,99 @@
 		    <!-- Collect the nav links, forms, and other content for toggling -->
 		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-		        <li><a href="#">Link</a></li>
-		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">One more separated link</a></li>
-		          </ul>
-		        </li>
+		        <li class=""><a href="#"> <span class="sr-only"></span></a></li>
+		        
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#manalysis" role="tab">market analysis</a></li>
+							<li><a href="#paymentform" role="tab">payment form recap</a></li>
+							<li><a href="#toprevenue" role="tab">top 20 revenue</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="#paxlist" role="tab">list of PAX</a></li>
+							<li><a href="#pnrsearch" role="tab">PNR search</a></li>
+							<li><a href="#discpromo" role="tab">discounts / promotions</a></li>
+						</ul>
+				</li>
+		        
+		        <li class=""><a href="#">Messages</a></li>
 		      </ul>
-		      <form class="navbar-form navbar-left" role="search">
-		        <div class="form-group">
-		          <input type="text" class="form-control" placeholder="Search">
-		        </div>
-		        <button type="submit" class="btn btn-default">Submit</button>
-		      </form>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#">Link</a></li>
+		        <li><a href="#">M.Arch <img alt="personal" src="img/person_ico.png"></a></li>
 		        <li class="dropdown">
-		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ua <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
-		            <li><a href="#">Action</a></li>
-		            <li><a href="#">Another action</a></li>
-		            <li><a href="#">Something else here</a></li>
-		            <li role="separator" class="divider"></li>
-		            <li><a href="#">Separated link</a></li>
+		            <li><a href="#">en</a></li>
 		          </ul>
 		        </li>
 		      </ul>
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
-	</div>
-	<div class="row mBack">
+		
+		<div class="col-sm-12 mTopMargin5">
+			<div class="panel panel-primary mBackOpacity">
+				<div class="panel-heading">
+		    		<h3 class="panel-title">report body <span class="pull-right mCursor _repMenuOpen"><span class="_repRightTopHelp"></span> <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></span></h3>
+		  		</div>
+				<div class="panel-body">
+					<div  class="col-sm-4 col-sm-offset-8 mRepTypeFix _repMenu">
+						<div class="panel panel-info">
+							<div class="panel-heading">
+					    		<h3 class="panel-title">Type of report</h3>
+					  		</div>
+							<div class="panel-body">
+								<ul class="nav nav-pills nav-stacked">
+									<li role="report" class="active"><a href="#manalysis" role="tab">market analysis</a></li>
+									<li role="report"><a href="#paymentform" role="tab">payment form recap</a></li>
+									<li role="report"><a href="#toprevenue" role="tab">top 20 revenue</a></li>
+									<li role="report"><a href="#paxlist" role="tab">list of PAX</a></li>
+									<li role="report"><a href="#pnrsearch" role="tab">PNR search</a></li>
+									<li role="report"><a href="#discpromo" role="tab">discounts / promotions</a></li>
+								</ul>
+							</div>
+							<div class="panel-footer"><span class="glyphicon glyphicon-resize-small mCursor _repMenuClose" aria-hidden="true"></span></div>
+						</div>
+					</div>
+					
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="manalysis">
+						
+						<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a class="navbar-brand _repRightTopHelp" href="#"></a>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						      <ul class="nav navbar-nav">
+						        <li class="active"><a href="#">by booking date <span class="sr-only">(current)</span></a></li>
+						        <li><a href="#">by travel date</a></li>
+						      </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+						
+					</div>
+					<div role="tabpanel" class="tab-pane" id="paymentform">2</div>
+					<div role="tabpanel" class="tab-pane" id="toprevenue">3</div>
+					<div role="tabpanel" class="tab-pane" id="paxlist">4</div>
+					<div role="tabpanel" class="tab-pane" id="pnrsearch">5</div>
+					<div role="tabpanel" class="tab-pane" id="discpromo">6</div>
+				</div>
+					
+				</div>
+				<div class="panel-footer"></div>
+			</div>
+		</div>
 		
 	</div>
 </div>
