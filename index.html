@@ -37,8 +37,8 @@
 		        <li class=""><a href="#"> <span class="sr-only"></span></a></li>
 		        
 				<li class="dropdown active">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
-						<ul class="dropdown-menu">
+					<a href="#" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
+						<ul class="dropdown-menu _reportMenuTop">
 							<li><a href="#manalysis" role="tab">market analysis</a></li>
 							<li><a href="#paymentform" role="tab">payment form recap</a></li>
 							<li><a href="#toprevenue" role="tab">top 20 revenue</a></li>
@@ -67,7 +67,7 @@
 		<div class="col-sm-12 mTopMargin5">
 			<div class="panel panel-primary mBackOpacity">
 				<div class="panel-heading">
-		    		<h3 class="panel-title">report body <span class="pull-right mCursor _repMenuOpen"><span class="_repRightTopHelp">market analysis</span> <span class="glyphicon glyphicon-resize-full" aria-hidden="true"></span></span></h3>
+		    		<h3 class="panel-title"><span class="_repRightTopHelp"></span></h3>
 		  		</div>
 				<div class="panel-body">
 					<div  class="col-sm-4 col-sm-offset-8 mRepTypeFix _repMenu mHide">
@@ -92,7 +92,7 @@
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="manalysis">
 						
-						<nav class="navbar navbar-inverse">
+						<nav class="navbar navbar-default">
 						  <div class="container-fluid">
 						    <!-- Brand and toggle get grouped for better mobile display -->
 						    <div class="navbar-header">
@@ -102,7 +102,115 @@
 						        <span class="icon-bar"></span>
 						        <span class="icon-bar"></span>
 						      </button>
-						      <a class="navbar-brand _repRightTopHelp" href="#">market analysis</a>
+						      <a class="navbar-brand" href="#"></a>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+						      <ul class="nav navbar-nav">
+						        <li class="active"><a href="#">by booking date <span class="sr-only">(current)</span></a></li>
+						        <li><a href="#">by travel date</a></li>
+						      </ul>
+							
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateFrom'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateTo'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left"><button type="button" class="btn btn-success">Proceed</button></form>
+							<ul class="nav navbar-nav navbar-right">
+						        <li class="dropdown">
+						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Export <span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						            <li><a href="#">Excel</a></li>
+						            <li><a href="#">PDF</a></li>
+						            <li><a href="#">Word</a></li>
+						          </ul>
+						       </li>
+						    </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+						
+						<table class="table table-responsive table-bordered">
+							<tr class="text-center">
+								<th>#</th><th class="text-center">booking date </th><th class="text-center">tickets count</th><th class="text-center">direction </th>
+							</tr>
+							<tr>
+								<td></td><td class="text-center"><span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></td><td class="text-center"><span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></td><td class="text-center">
+									<div class="col-sm-3 col-sm-offset-5">
+								    <div class="input-group">
+								      <input type="text" class="form-control" aria-label="...">
+								    </div><!-- /input-group -->
+								    </div>
+								  </td>
+							</tr>
+							<tr>
+								<td>1</td><td>20/03/2015 12:44</td><td>10 000</td><td>Paris</td>
+							</tr>
+							<tr>
+								<td>2</td><td>20/03/2015 13:44</td><td>4 000</td><td>London</td>
+							</tr>
+							<tr>
+								<td>3</td><td>20/03/2015 13:53</td><td>900</td><td>Kyiv</td>
+							</tr>
+							<tr>
+								<td>4</td><td>20/03/2015 13:54</td><td>1 200</td><td>Berlin</td>
+							</tr>
+							<tr>
+								<td>5</td><td>20/03/2015 13:54</td><td>3 300</td><td>Rome</td>
+							</tr>
+						</table>
+						
+						<nav>
+						  <ul class="pagination">
+						    <li class="disabled">
+						      <span>
+						        <span aria-hidden="true">&laquo;</span>
+						      </span>
+						    </li>
+						    <li class="active">
+						      <span>1 <span class="sr-only">(current)</span></span>
+						    </li>
+						    <li><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+							  <a href="#" aria-label="Next">
+							    <span aria-hidden="true">&raquo;</span>
+							  </a>
+							</li>
+						  </ul>
+						</nav>
+						
+					</div>
+					<div role="tabpanel" class="tab-pane" id="paymentform">2</div>
+					<div role="tabpanel" class="tab-pane" id="toprevenue">
+						
+						<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a class="navbar-brand" href="#"></a>
 						    </div>
 						
 						    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -153,89 +261,6 @@
 								      <input type="text" class="form-control" aria-label="...">
 								    </div><!-- /input-group -->
 								  </th>
-							</tr>
-							<tr>
-								<td>1</td><td>20/03/2015 12:44</td><td>10 000</td><td>Paris</td>
-							</tr>
-							<tr>
-								<td>2</td><td>20/03/2015 13:44</td><td>4 000</td><td>London</td>
-							</tr>
-							<tr>
-								<td>3</td><td>20/03/2015 13:53</td><td>900</td><td>Kyiv</td>
-							</tr>
-							<tr>
-								<td>4</td><td>20/03/2015 13:54</td><td>1 200</td><td>Berlin</td>
-							</tr>
-							<tr>
-								<td>5</td><td>20/03/2015 13:54</td><td>3 300</td><td>Rome</td>
-							</tr>
-						</table>
-						
-					</div>
-					<div role="tabpanel" class="tab-pane" id="paymentform">2</div>
-					<div role="tabpanel" class="tab-pane" id="toprevenue">
-						
-						<nav class="navbar navbar-inverse">
-						  <div class="container-fluid">
-						    <!-- Brand and toggle get grouped for better mobile display -->
-						    <div class="navbar-header">
-						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-4" aria-expanded="false">
-						        <span class="sr-only">Toggle navigation</span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						        <span class="icon-bar"></span>
-						      </button>
-						      <a class="navbar-brand _repRightTopHelp" href="#">top 20 revenue</a>
-						    </div>
-						
-						    <!-- Collect the nav links, forms, and other content for toggling -->
-						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-4">
-						      <ul class="nav navbar-nav">
-						        <li class="active"><a href="#">by book date <span class="sr-only">(current)</span></a></li>
-						        <li><a href="#">by travel date</a></li>
-						      </ul>
-							
-							<form class="navbar-form navbar-left">
-								<div class='input-group date _marketDateFrom'>
-									<input type='text' class="form-control" />
-									<span class="input-group-addon">
-										<span class="glyphicon glyphicon-calendar"></span>
-									</span>
-								</div>
-							</form>
-							<form class="navbar-form navbar-left">
-								<div class='input-group date _marketDateTo'>
-									<input type='text' class="form-control" />
-									<span class="input-group-addon">
-										<span class="glyphicon glyphicon-calendar"></span>
-									</span>
-								</div>
-							</form>
-							<form class="navbar-form navbar-left"><button type="button" class="btn btn-success">Proceed</button></form>
-							<ul class="nav navbar-nav navbar-right">
-						        <li class="dropdown">
-						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Export <span class="caret"></span></a>
-						          <ul class="dropdown-menu">
-						            <li><a href="#">Excel</a></li>
-						            <li><a href="#">PDF</a></li>
-						            <li><a href="#">Word</a></li>
-						          </ul>
-						       </li>
-						    </ul>
-						    </div><!-- /.navbar-collapse -->
-						  </div><!-- /.container-fluid -->
-						</nav>
-						
-						<table class="table table-responsive table-striped">
-							<tr>
-								<th>#</th><th><div class="col-sm-3">booking date </div> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th><div class="col-sm-3">tickets count</div><span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th><div class="col-sm-2">direction</div> <div class="col-sm-3">
-								    <div class="input-group">
-								      <span class="input-group-addon">
-								        <input type="checkbox" aria-label="...">
-								      </span>
-								      <input type="text" class="form-control" aria-label="...">
-								    </div><!-- /input-group -->
-								  </div></th>
 							</tr>
 							<tr>
 								<td>1</td><td>20/03/2015 12:44</td><td>10 000</td><td>Paris</td>

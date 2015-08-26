@@ -18,6 +18,12 @@ var UIA = {
 			
 			$('._marketDateFrom').datetimepicker();
 			$('._marketDateTo').datetimepicker();
+			
+			$('._reportMenuTop a').click(function(e){
+				e.preventDefault();
+				$('._repRightTopHelp').text($(this).text());
+				$(this).tab('show');
+			});
 		}
 }
 
