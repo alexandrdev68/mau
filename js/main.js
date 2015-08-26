@@ -14,7 +14,10 @@ var UIA = {
 				  $('._repRightTopHelp').text($(this).text());
 				  $(this).tab('show');
 				  $('._repMenu').hide();
-			})
+			});
+			
+			$('._marketDateFrom').datetimepicker();
+			$('._marketDateTo').datetimepicker();
 		}
 }
 
