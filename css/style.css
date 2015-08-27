@@ -58,3 +58,12 @@ div.tab-pane.active{
 .mNavbar-form{
 	margin:8px 0 8px 0;
 }
+
+.mHover:hover{
+	cursor:pointer;
+	background-color:#337ab7;
+	color:#fff;
+}
+p.mHover{
+	margin:0;
+}

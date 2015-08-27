@@ -13,6 +13,9 @@ var UIA = {
 				  $(this).tab('show');
 			});
 			
+			$(function () {
+				  $('[data-toggle="popover"]').popover();
+			});
 			
 			$('._marketDateFrom').datetimepicker();
 			$('._marketDateTo').datetimepicker();
