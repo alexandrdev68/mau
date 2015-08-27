@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="libs/bootstrap-datetimepicker-master/build/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="libs/jquery-1.11.3.min.js"></script>
+<script src="js/main.js"></script>
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/moment-with-locales.min.js"></script>
+<script src="libs/bootstrap-datetimepicker-master/build/js/bootstrap-datetimepicker.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRM Admin</title>
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row mBack">
+		<nav class="navbar navbar-default navbar-static-top mTopPnl mBckWhite">
+		  <div class="container-fluid col-sm-10 col-sm-offset-1">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand mLogoCorrection" href="#">
+		      	<img alt="Brand" src="img/brand_logo.png">
+		      </a>
+		    </div>
+		
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li class=""><a href="#"> <span class="sr-only"></span></a></li>
+		        
+				<li class="dropdown active">
+					<a href="index.html" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
+						<ul class="dropdown-menu _reportMenuTop">
+							<li><a href="index.html#manalysis" role="tab">Market analysis</a></li>
+							<li><a href="index.html#paymentform" role="tab">Payment form recap</a></li>
+							<li><a href="index.html#toprevenue" role="tab">Top 20 revenue</a></li>
+							<li><a href="index.html#transcounter" role="tab">Transaction counter</a></li>
+							<li role="separator" class="divider"></li>
+							<li><a href="admin.html" role="tab">Report Tools</a></li>
+						</ul>
+				</li>
+		        
+		        <!-- <li class="active"><a href="admin.html">Report tools</a></li>-->
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">M.Arch <img alt="personal" src="img/person_ico.png"></a></li>
+		        <li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ua <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">en</a></li>
+		          </ul>
+		        </li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+		
+		<div class="col-sm-12 mTopMargin5">
+			
+		<ul class="nav nav-tabs nav-justified _mAdminToolsNav" role="tablist">
+		  <li role="presentation" class="active"><a href="#paxlist" data-toggle="tab" role="tab">List of PAX</a></li>
+		  <li role="presentation"><a href="#pnrsearch" data-toggle="tab" role="tab">PNR search</a></li>
+		  <li role="presentation"><a href="#discpromo" data-toggle="tab" role="tab">Discounts / Promotions</a></li>
+		</ul>
+				
+		
+
+		<div role="tabpanel" class="tab-pane active mBackOpacity" id="paxlist"><!-- PAX report -->
+						
+			
+			<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a class="navbar-brand" href="#"></a>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+						      <ul class="nav navbar-nav">
+						        
+						      </ul>
+							
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateFrom'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left" role="search">
+							  <div class="form-group">
+							    <input type="text" class="form-control" placeholder="Flight">
+							  </div>
+							</form>
+							<form class="navbar-form navbar-left"><button type="button" class="btn btn-success">Proceed</button></form>
+							<ul class="nav navbar-nav navbar-right">
+						        <li class="dropdown">
+						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Export <span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						            <li><a href="#">Excel</a></li>
+						            <li><a href="#">PDF</a></li>
+						            <li><a href="#">Word</a></li>
+						          </ul>
+						       </li>
+						    </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+			
+			
+			<table class="table table-responsive table-bordered">
+				<tr class="text-center">
+					<th>#</th><th class="text-center"><span>Date</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center"><span>Flight</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center">Creation date </th>
+				</tr>
+				<tr>
+					<td>1</td><td>20/03/2015 12:44</td><td>123</td><td>19/06/2015 10:00</td>
+				</tr>
+				<tr>
+					<td>2</td><td>18/01/2015 10:40</td><td>400</td><td>16/06/2015 11:00</td>
+				</tr>
+				<tr class="success">
+					<td>3</td><td>16/01/2015 10:35</td><td>200</td><td>14/06/2015 12:30</td>
+				</tr>
+				<tr>
+					<td>4</td><td>15/08/2015 11:44</td><td>123</td><td>19/06/2015 10:00</td>
+				</tr>
+				<tr>
+					<td>5</td><td>20/03/2015 12:44</td><td>123</td><td>19/06/2015 10:00</td>
+				</tr>
+			</table>
+			
+			<nav class="col-md-offset-5">
+			  <ul class="pagination">
+			    <li class="disabled">
+			      <span>
+			        <span aria-hidden="true">&laquo;</span>
+			      </span>
+			    </li>
+			    <li class="active">
+			      <span>1 <span class="sr-only">(current)</span></span>
+			    </li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">5</a></li>
+				<li>
+				  <a href="#" aria-label="Next">
+				    <span aria-hidden="true">&raquo;</span>
+				  </a>
+				</li>
+			  </ul>
+			</nav>
+			
+						
+		</div>
+		
+		<div role="tabpanel" class="tab-pane" id="pnrsearch"><!-- PNR search -->
+						
+			PNR search
+						
+		</div>
+		
+		<div role="tabpanel" class="tab-pane" id="discpromo"><!-- Discounts / Promotions -->
+						
+			Discounts / Promotions
+						
+		</div>
+
+			
+			
+		</div>
+		
+		
+		
+	</div>
+</div>
+ 
+</body>
+</html>

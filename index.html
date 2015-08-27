@@ -37,19 +37,18 @@
 		        <li class=""><a href="#"> <span class="sr-only"></span></a></li>
 		        
 				<li class="dropdown active">
-					<a href="#" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
+					<a href="index.html" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Reports <span class="caret"></span></a>
 						<ul class="dropdown-menu _reportMenuTop">
-							<li><a href="#manalysis" role="tab">Market analysis</a></li>
-							<li><a href="#paymentform" role="tab">Payment form recap</a></li>
-							<li><a href="#toprevenue" role="tab">Top 20 revenue</a></li>
+							<li><a href="index.html#manalysis" role="tab">Market analysis</a></li>
+							<li><a href="index.html#paymentform" role="tab">Payment form recap</a></li>
+							<li><a href="index.html#toprevenue" role="tab">Top 20 revenue</a></li>
+							<li><a href="index.html#transcounter" role="tab">Transaction counter</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#paxlist" role="tab">List of PAX</a></li>
-							<li><a href="#pnrsearch" role="tab">PNR search</a></li>
-							<li><a href="#discpromo" role="tab">Discounts / Promotions</a></li>
+							<li><a href="admin.html" role="tab">Report Tools</a></li>
 						</ul>
 				</li>
 		        
-		        <li class=""><a href="#">Messages</a></li>
+		        <!-- <li class=""><a href="admin.html">Report tools</a></li>-->
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#">M.Arch <img alt="personal" src="img/person_ico.png"></a></li>
@@ -67,7 +66,7 @@
 		<div class="col-sm-12 mTopMargin5">
 			<div class="panel panel-primary mBackOpacity">
 				<div class="panel-heading">
-		    		<h3 class="panel-title"><span class="_repRightTopHelp"></span></h3>
+		    		<h3 class="panel-title"><span class="_repRightTopHelp">Market analysis</span></h3>
 		  		</div>
 				<div class="panel-body">
 					
@@ -156,7 +155,6 @@
 						    <li class="active">
 						      <span>1 <span class="sr-only">(current)</span></span>
 						    </li>
-						    <li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
@@ -171,6 +169,57 @@
 						
 					</div>
 					<div role="tabpanel" class="tab-pane" id="paymentform">
+						
+						<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a class="navbar-brand" href="#"></a>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+						      <ul class="nav navbar-nav">
+						        <li class="active"><a href="#">by booking date <span class="sr-only">(current)</span></a></li>
+						        <li><a href="#">by travel date</a></li>
+						      </ul>
+							
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateFrom'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateTo'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left"><button type="button" class="btn btn-success">Proceed</button></form>
+							<ul class="nav navbar-nav navbar-right">
+						        <li class="dropdown">
+						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Export <span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						            <li><a href="#">Excel</a></li>
+						            <li><a href="#">PDF</a></li>
+						            <li><a href="#">Word</a></li>
+						          </ul>
+						       </li>
+						    </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
 						
 						<table class="table table-responsive table-bordered">
 							<tr class="text-center">
@@ -203,7 +252,6 @@
 						    <li class="active">
 						      <span>1 <span class="sr-only">(current)</span></span>
 						    </li>
-						    <li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
@@ -301,7 +349,6 @@
 						    <li class="active">
 						      <span>1 <span class="sr-only">(current)</span></span>
 						    </li>
-						    <li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
@@ -315,9 +362,101 @@
 						</nav>
 						
 					</div>
-					<div role="tabpanel" class="tab-pane" id="paxlist">4</div>
-					<div role="tabpanel" class="tab-pane" id="pnrsearch">5</div>
-					<div role="tabpanel" class="tab-pane" id="discpromo">6</div>
+					
+					<div role="tabpanel" class="tab-pane" id="transcounter"><!-- Transaction counter report -->
+						<nav class="navbar navbar-default">
+						  <div class="container-fluid">
+						    <!-- Brand and toggle get grouped for better mobile display -->
+						    <div class="navbar-header">
+						      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-transcounter-navbar-collapse" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						      </button>
+						      <a class="navbar-brand" href="#"></a>
+						    </div>
+						
+						    <!-- Collect the nav links, forms, and other content for toggling -->
+						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+						      <ul class="nav navbar-nav">
+						        
+						      </ul>
+							
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateFrom'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left">
+								<div class='input-group date _marketDateTo'>
+									<input type='text' class="form-control" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left"><button type="button" class="btn btn-success">Proceed</button></form>
+							<ul class="nav navbar-nav navbar-right">
+						        <li class="dropdown">
+						          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Export <span class="caret"></span></a>
+						          <ul class="dropdown-menu">
+						            <li><a href="#">Excel</a></li>
+						            <li><a href="#">PDF</a></li>
+						            <li><a href="#">Word</a></li>
+						          </ul>
+						       </li>
+						    </ul>
+						    </div><!-- /.navbar-collapse -->
+						  </div><!-- /.container-fluid -->
+						</nav>
+						
+						<table class="table table-responsive table-bordered">
+							<tr class="text-center">
+								<th>#</th><th class="text-center"><span>Transaction date</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center"><span>Transaction count</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th>
+							</tr>
+							<tr>
+								<td>1</td><td>21/03/2015 12:44</td><td>5 000</td>
+							</tr>
+							<tr>
+								<td>2</td><td>14/03/2015 13:44</td><td>1 050</td>
+							</tr>
+							<tr>
+								<td>3</td><td>18/03/2015 13:53</td><td>3 900</td>
+							</tr>
+							<tr>
+								<td>4</td><td>17/03/2015 13:53</td><td>1 220</td>
+							</tr>
+							<tr>
+								<td>5</td><td>07/03/2015 13:54</td><td>2 310</td>
+							</tr>
+						</table>
+						
+						<nav>
+						  <ul class="pagination">
+						    <li class="disabled">
+						      <span>
+						        <span aria-hidden="true">&laquo;</span>
+						      </span>
+						    </li>
+						    <li class="active">
+						      <span>1 <span class="sr-only">(current)</span></span>
+						    </li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">3</a></li>
+							<li><a href="#">4</a></li>
+							<li><a href="#">5</a></li>
+							<li>
+							  <a href="#" aria-label="Next">
+							    <span aria-hidden="true">&raquo;</span>
+							  </a>
+							</li>
+						  </ul>
+						</nav>
+					</div>
 				</div>
 					
 				</div>

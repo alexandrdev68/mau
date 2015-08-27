@@ -1,13 +1,5 @@
 var UIA = {
 		init : function(){
-			$('._repMenuClose').on('click', function(){
-				$('._repMenu').hide();
-				
-			});
-			$('._repMenuOpen').on('click', function(){
-				$('._repMenu').show();
-				
-			});
 			
 			$('._repMenu a').click(function (e) {
 				  e.preventDefault();
@@ -16,11 +8,17 @@ var UIA = {
 				  $('._repMenu').hide();
 			});
 			
+			$('._mAdminToolsNav a').click(function (e) {
+				  e.preventDefault();
+				  $(this).tab('show');
+			});
+			
+			
 			$('._marketDateFrom').datetimepicker();
 			$('._marketDateTo').datetimepicker();
 			
 			$('._reportMenuTop a').click(function(e){
-				e.preventDefault();
+				//e.preventDefault();
 				$('._repRightTopHelp').text($(this).text());
 				$(this).tab('show');
 			});

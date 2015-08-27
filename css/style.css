@@ -48,3 +48,10 @@
 .mLogoCorrection{
 	padding:3px;
 }
+
+div.tab-pane{
+	display:none;
+}
+div.tab-pane.active{
+	display:block;
+}
