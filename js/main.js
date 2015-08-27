@@ -17,6 +17,16 @@ var UIA = {
 				  $('[data-toggle="popover"]').popover();
 			});
 			
+			$('[data-toggle="popover"]').on('inserted.bs.popover', function(){
+				var $self = $(this);
+				$('._SupMangeMenu p').on('click', function(event){
+					$self.popover('hide');
+					$('div._SupInterface').modal('show');
+					
+				});
+			});
+			
+			
 			$('._marketDateFrom').datetimepicker();
 			$('._marketDateTo').datetimepicker();
 			
