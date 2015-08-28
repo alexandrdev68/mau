@@ -67,3 +67,10 @@ div.tab-pane.active{
 p.mHover{
 	margin:0;
 }
+
+.mMenuMarker{
+	visibility:hidden;
+}
+ul.dropdown-menu li.active span.mMenuMarker{
+	visibility:visible;
+}

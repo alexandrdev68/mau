@@ -26,7 +26,6 @@ var UIA = {
 				});
 			});
 			
-			
 			$('._marketDateFrom').datetimepicker();
 			$('._marketDateTo').datetimepicker();
 			
@@ -34,6 +33,21 @@ var UIA = {
 				//e.preventDefault();
 				$('._repRightTopHelp').text($(this).text());
 				$(this).tab('show');
+			});
+			
+		},
+		initBookingPage : function(){
+			$('ul.dropdown-menu.multiple-select li a').off('click');
+			
+			$('ul.dropdown-menu.multiple-select li').on('click', function(event){
+				event.stopPropagation();
+				if($(this).hasClass('active')){
+					console.log('has');
+					$(this).removeClass('active');
+				}else{
+					$(this).addClass('active');
+					console.log('has not');
+				}
 			});
 		}
 }
