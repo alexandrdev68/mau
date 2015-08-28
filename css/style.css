@@ -1,8 +1,11 @@
 @CHARSET "UTF-8";
 .mBack{
-	background:url(../img/back.jpg) fixed transparent no-repeat center;
-	height:790px;
-	background-size:cover;
+	/*background:url(../img/back.jpg) fixed transparent no-repeat center;*/
+	background: radial-gradient(0% 0%, circle farthest-side, #2d7397 8%, #1d354d 100%);
+	background: -moz-radial-gradient(0% 0%, circle farthest-side, #2d7397 8%, #1d354d 100%);
+	background: -webkit-radial-gradient(0% 0%, circle farthest-side, #2d7397 8%, #1d354d 100%);
+	min-height:790px;
+	/*background-size:cover;*/
 }
 .mTopPnl{
 	margin-bottom:0;
