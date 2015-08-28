@@ -14,6 +14,11 @@
 <title>CRM Admin</title>
 </head>
 <body>
+<script>
+$(document).ready(function(){
+	UIA.initBookingPage();
+});
+</script>
 <div class="container-fluid">
 	<div class="row mBack">
 		<nav class="navbar navbar-default navbar-static-top mTopPnl mBckWhite">
@@ -194,27 +199,31 @@
 						    <!-- Collect the nav links, forms, and other content for toggling -->
 						    <div class="collapse navbar-collapse" id="bs-pnr-navbar-collapse-2">
 						      <ul class="nav navbar-nav">
-						        <li class="dropdown">
-									<a href="index.html" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Creation date<span class="caret"></span></a>
-										<ul class="dropdown-menu _reportMenuTop">
-											<li><a href="#" role="tab">Booking date</a></li>
-											<li><a href="#" role="tab">Creating Date</a></li>
-										</ul>
-								</li>
+						       
 								<li class="dropdown">
 									<a href="index.html" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Payment method<span class="caret"></span></a>
-										<ul class="dropdown-menu _reportMenuTop">
-											<li><a href="#" role="tab">Visa</a></li>
-											<li><a href="#" role="tab">Mastercard</a></li>
-											<li><a href="#" role="tab">American Express</a></li>
-											<li><a href="#" role="tab">Cash</a></li>
+										<ul class="dropdown-menu multiple-select _reportMenuTop">
+											<li><a href="#" role="tab">Visa <span class="glyphicon glyphicon-ok mMenuMarker" aria-hidden="true"></span></a></li>
+											<li><a href="#" role="tab">Mastercard <span class="glyphicon glyphicon-ok mMenuMarker" aria-hidden="true"></span></a></li>
+											<li><a href="#" role="tab">American Express <span class="glyphicon glyphicon-ok mMenuMarker" aria-hidden="true"></span></a></li>
+											<li><a href="#" role="tab">Cash <span class="glyphicon glyphicon-ok mMenuMarker" aria-hidden="true"></span></a></li>
 										</ul>
 								</li>
 						      </ul>
 							
 							<form class="navbar-form navbar-left">
+								<label for="creatdate">Creation date</label>
 								<div class='input-group date _marketDateFrom'>
-									<input type='text' class="form-control" />
+									<input id="creatdate" type='text' class="form-control" placeholder="Creation date" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left">
+								<label for="creatdate">Booking date</label>
+								<div class='input-group date _marketDateTo'>
+									<input id="creatdate" type='text' class="form-control" placeholder="Booking date" />
 									<span class="input-group-addon">
 										<span class="glyphicon glyphicon-calendar"></span>
 									</span>
