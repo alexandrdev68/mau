@@ -97,18 +97,22 @@ $(document).ready(function(){
 						    <!-- Collect the nav links, forms, and other content for toggling -->
 						    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
 						      <ul class="nav navbar-nav">
-						        <li class="dropdown active">
-									<a href="index.html" class="dropdown-toggle-report" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Creation date<span class="caret"></span></a>
-										<ul class="dropdown-menu _reportMenuTop">
-											<li><a href="#" role="tab">Creation date</a></li>
-											<li><a href="#" role="tab">Date</a></li>
-										</ul>
-								</li>
+						        
 						      </ul>
 							
 							<form class="navbar-form navbar-left">
+								<label for="creatdate">Creation date</label>
 								<div class='input-group date _marketDateFrom'>
-									<input type='text' class="form-control" />
+									<input id="creatdate" type='text' class="form-control" placeholder="Creation date" />
+									<span class="input-group-addon">
+										<span class="glyphicon glyphicon-calendar"></span>
+									</span>
+								</div>
+							</form>
+							<form class="navbar-form navbar-left">
+								<label for="creatdate">Booking date</label>
+								<div class='input-group date _marketDateTo'>
+									<input id="creatdate" type='text' class="form-control" placeholder="Booking date" />
 									<span class="input-group-addon">
 										<span class="glyphicon glyphicon-calendar"></span>
 									</span>
@@ -137,7 +141,7 @@ $(document).ready(function(){
 			
 			<table class="table table-responsive table-bordered">
 				<tr class="text-center">
-					<th>#</th><th class="text-center"><span>Date</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center"><span>Flight</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center">Creation date </th>
+					<th>#</th><th class="text-center"><span>Booking date</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center"><span>Flight</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center">Creation date </th>
 				</tr>
 				<tr>
 					<td>1</td><td>20/03/2015 12:44</td><td>123</td><td>19/06/2015 10:00</td>
@@ -379,7 +383,7 @@ $(document).ready(function(){
 			
 			<table class="table table-responsive table-bordered">
 				<tr class="text-center">
-					<th>#</th><th class="text-center"><span>Date</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center"><span>Flight</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center">Creation date </th>
+					<th>#</th><th class="text-center"><span>Booking date</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center"><span>Flight</span> <span class="glyphicon mCursor glyphicon-sort" aria-hidden="true"></span></th><th class="text-center">Creation date </th>
 				</tr>
 				<tr>
 					<td>1</td><td>20/03/2015 12:44</td><td>123</td><td>19/06/2015 10:00</td>
